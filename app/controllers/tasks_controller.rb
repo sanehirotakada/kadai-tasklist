@@ -6,7 +6,6 @@ class TasksController < ApplicationController
   end
 
   def show
-    @task = Task.find(params[:id])  
   end
 
   def new
@@ -26,7 +25,6 @@ class TasksController < ApplicationController
   end
 
   def edit
-     @task = Task.find(params[:id])  
   end
 
   def update
@@ -51,7 +49,7 @@ class TasksController < ApplicationController
   
   private
   
-  def set_message
+  def set_task
     @task = Task.find(params[:id])
   end  
   
